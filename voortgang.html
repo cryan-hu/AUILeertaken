@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Voortgang</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+
+</head>
+
+<body>
+<div id="container">
+	<nav>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="instellingen.html">Instellingen</a></li>
+			<li class="selected"><a href="voortgang.html" class="selected">Voortgang</a></li>
+			<div style="clear: both;"></div>
+		</ul>
+	</nav>
+	<main>
+	<div id="dialoog" title="Studie">
+			<div id="dialoogHeader">
+			<span id="kruisje" onclick="closeDialoog()">&times;</span><h3>Studietempo</h3>
+			</div>
+			<div id="dialoogContent">
+			<p>Je hebt tot nu toe <span id="ECTSTot"></span> ECTS behaald!</p>
+			<p>Je huidige studietempo is:<br><span id="ECTSPer">4</span> ECTS /mnd.</p>
+			<p>Op basis van dit studietempo heb je <span id="MaandNodig">15</span> mnd nodig voor je P.</p>
+			<input type="button" id="Close" onclick="closeDialoog()"  value="OK">
+			</div>
+	</div>
+	<table>
+	<tr>
+		<td><h1>Voortgang</h1></td><td>Student</td>
+	</tr><tr>
+		<td rowspan="2" class="spacing">
+		<form name="bereken" action="">
+		<table id="voortgang"> <!--Er staat in de opdracht dat er alleen een tabel nodig is op de instellingen pagina, hoe maak ik hier dan een tabel?-->
+			<tr><th>Vakcode</th><th>ECTS</th><th>Datum Behaald</th></tr> <!-- nog placeholders, dit horen inputvelden te zijn-->
+			<tr><td><input type="text" name="Vak1" value="TICT-V1PROG"></td><td><input type="text" name="ECTS1" id="ECTS1" value=5></td><td><input type="text" name="Datum1" value="10-11-2016"></td></tr>
+			<tr><td><input type="text" name="Vak2" value="TICT-V1PROG"></td><td><input type="text" name="ECTS2" id="ECTS2" value=5></td><td><input type="text" name="Datum2" value="10-11-2016"></td></tr>
+			<tr><td><input type="text" name="Vak3" value="TICT-V1PROG"></td><td><input type="text" name="ECTS3" id="ECTS3" value=5></td><td><input type="text" name="Datum3" value="10-11-2016"></td></tr>
+			<tr><td><input type="text" name="Vak4" value="TICT-V1PROG"></td><td><input type="text" name="ECTS4" id="ECTS4" value=5></td><td><input type="text" name="Datum4" value="10-11-2016"></td></tr>
+			<tr><td><input type="text" name="Vak5" value="TICT-V1PROG"></td><td><input type="text" name="ECTS5" id="ECTS5" value=5></td><td><input type="text" name="Datum5" value="10-11-2016"></td></tr>
+			<tr><td><input type="text" name="Vak6" value="TICT-V1PROG"></td><td><input type="text" name="ECTS6" id="ECTS6" value=5></td><td><input type="text" name="Datum6" value="10-11-2016"></td></tr>
+			<tr><td><input type="text" name="Vak7" value="TICT-V1PROG"></td><td><input type="text" name="ECTS7" id="ECTS7" value=5></td><td><input type="text" name="Datum7" value="10-11-2016"></td></tr>
+			<tr><td><input type="text" name="Vak8" value="TICT-V1PROG"></td><td><input type="text" name="ECTS8" id="ECTS8" value=5></td><td><input type="text" name="Datum8" value="10-11-2016"></td></tr>
+			<tr><td><input type="text" name="Vak9" value="TICT-V1PROG"></td><td><input type="text" name="ECTS9" id="ECTS9" value=5></td><td><input type="text" name="Datum9" value="10-11-2016"></td></tr>
+			<tr><td><input type="text" name="Vak10" value="TICT-V1PROG"></td><td><input type="text" name="ECTS10" id="ECTS10" value=5></td><td><input type="text" name="Datum10" value="10-11-2016"></td></tr>
+			<tr><td><input type="text" name="Vak11" value="TICT-V1PROG"></td><td><input type="text" name="ECTS11" id="ECTS11" value=5></td><td><input type="text" name="Datum11" value="10-11-2016"></td></tr>
+			<tr><td><input type="text" name="Vak12" value="TICT-V1PROG"></td><td><input type="text" name="ECTS12" id="ECTS12" value=5></td><td><input type="text" name="Datum11" value="10-11-2016"></td></tr>
+			
+		</table>
+		</td>
+		<td><img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Burn_down_chart.png" id="burndownchart" alt=""/></td>
+	</tr><tr>
+	<td><input type="button" id="open" value="Bereken Studietempo" onclick="openDialoog()" ></td>
+	
+	</tr>
+	</form>
+	</table>
+
+	</main>
+	<footer>
+		<p id="opdracht">Deze opdracht is gemaakt in het kader van het vak Analyse & User Interfaces</p>
+		<p id="auteur">Auteur: Jorrit Strikwerda</p>
+		<p id="datum">Datum: 06-02-2017</p>
+		<div style="clear: both;"></div>
+	</footer>
+</div>	
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Instellingen</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+	<script src="js/script.js"></script>
+</head>
+<body>
+<div id="container">
+	<nav>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li class="selected"><a href="instellingen.html" class="selected">Instellingen</a></li>
+			<li><a href="voortgang.html">Voortgang</a></li>
+			<div style="clear: both;"></div>
+		</ul>
+	</nav>
+	<main>
+		<h1>Instellingen</h1>
+		<form action="">
+		<table id="instellingen">
+		<tr>
+			<td> Naam: </td> <td class="spacing" ><input type="text" name="naam" value=""></td>
+			<td>Klas:</td><td><select name="klas"><option value="V1A">V1A</option><option value="V1B">V1B</option><option value="V1C">V1C</option><option value="V1D">V1D</option></select></td>
+		</tr><tr>
+			<td> Achternaam:</td><td><input type="text" name="achternaam" value=""></td>
+			<td> Gekozen Studierichting:</td><td><input type="radio" id="radio1" name="richting" value="SNE" checked><label for="radio1">SNE</label></td>
+		</tr><tr>
+			<td>Studentnr:</td><td><input type="text" name="studentnr" value=""></td>
+			<td/><td><input type="radio" id="radio2" name="richting" value="BIM"><label for="radio2">BIM</label></td>
+		</tr><tr>
+			<td>Email:</td><td><input type="text" name="email" value=""></td>
+			<td/><td><input type="radio" id="radio3" name="richting" value="SIE"><label for="radio3">SIE</label></td>
+		</tr><tr>
+			<td>Geboortedatum:</td><td><input type="text" name="geboortedatum" value=""></td>
+			<td/><td><input type="radio" id="radio4" name="richting" value="TI"><label for="radio4">TI</label></td>
+		</tr><tr>
+			<td>&nbsp;</td><td rowspan="4">Placeholder Kalender<td/><td/>
+		</tr><tr>
+			<td/><td>Propedeuse behaald:</td><td><input type="radio" id="radio5" name="prop" value="ja"><label for="radio5">Ja</label></td>
+		</tr><tr>
+			<td/><td/><td><input type="radio" name="prop" id="radio6" value="nee" checked><label for="radio6">Nee</label></td>
+		</tr>
+		</table>
+		<input id="bereken" onclick="sayHello()" type="submit" value="Opslaan">
+		</form>
+	</main>
+	<footer>
+		<p id="opdracht">Deze opdracht is gemaakt in het kader van het vak Analyse & User Interfaces</p>
+		<p id="auteur">Auteur: Jorrit Strikwerda</p>
+		<p id="datum">Datum: 06-02-2017</p>
+		<div style="clear: both;"></div>
+	</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,205 @@
+#container{
+	width:1100px;
+	margin-left: auto;
+    margin-right: auto;
+	background-color:white;
+	border: 1px solid #555;	
+}
+
+body{
+	font-family:Arial;
+	background-color:gray;
+}
+
+nav{
+	margin-bottom: 15px;
+}
+
+nav ul{
+	list-style-type: none;
+	padding:0px;
+	margin:0px;
+	width:100%;
+	border-bottom:8px solid #008ae6;
+}
+
+nav .selected{
+	color:white;
+	background-color:#008ae6;
+	border: none;
+	padding: 3px 10px;
+}
+
+nav li{
+	float: left;
+	border: 1px solid #555;
+	padding: 5.5px 10px;
+	border-top: none;
+}
+
+nav li a{
+	display:block;
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+}
+
+main{
+	padding:10px;
+}
+
+#instellingen td, #instellingen th{
+	height: 40px;
+	padding: 3px;
+}
+
+#voortgang td, #voortgang th{
+	border: 1px solid black;
+	padding: 4px 15px;
+	background-color: #aaff80;
+}
+
+table#voortgang {
+	border-collapse: collapse;
+	border: 5px double black;
+}
+
+
+#instellingen input[type=text] {
+    border: 2px solid black;
+	height: 25px;
+	width:200px;
+	background-color: #f1f1f1;
+}
+
+#voortgang input[type=text] {
+    border: none;
+	background-color: #aaff80;
+	width:150px;
+}
+
+input[type=radio]{
+  width   : 28px;	
+  height: 25px;
+  vertical-align: bottom;
+}
+
+
+input[type=radio]:checked + label{
+    color:#008ae6;
+}
+
+input[type=submit],input[type=button]{
+	width: 240px;
+	background-color:#d9d9d9;
+	padding: 10px 20px;
+	font-weight: bold;
+	font-size: 17px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+label{
+	font-size:19px;
+}
+
+select {
+    padding: 5px;
+	width: 200px;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+	font-size: 17px;
+}
+
+.spacing{
+	padding-right: 90px;
+}
+
+#instellingen td.spacing{
+	padding-right: 90px;
+}
+
+
+#huImg {
+	float:right;
+	width:100px;
+}
+
+#fotoHU {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width:300px;	
+}
+
+#burndownchart {
+	width:400px;
+}
+
+footer{
+	border-top:4px solid #555;
+	font-style: italic;
+	font-size: 14px;
+	padding: 10px;
+}
+
+#opdracht{
+	text-align:center;
+}
+
+#auteur{
+	float:left;
+}
+
+#datum{
+	float:right;
+}
+
+#dialoog{
+display:none;
+position:fixed;
+z-index: 1;
+border:4px solid #555;
+top: 330px;
+left: 50%;
+margin-top: -90px;
+margin-left: -200px;
+}
+
+#dialoogHeader{
+	background-color:white;
+	padding: 5px;
+}
+
+#dialoogContent{
+	background-color: #5c85d6;	
+	padding: 5px;
+	text-align: center;
+}
+
+#dialoogHeader h3{
+	margin:10px 5px;
+}
+
+#dialoogContent input[type=button]{
+	width: 160px;
+	background-color:#d9d9d9;
+	padding: 6px 12px;
+	font-weight: bold;
+	font-size: 13px;
+	box-shadow: none;	
+}
+
+
+#kruisje{
+	color: #5c85d6;
+	font-size:30px;
+	font-weight: bold;
+	float: right;
+}
+#kruisje:hover,#close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
